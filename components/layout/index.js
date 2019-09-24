@@ -28,7 +28,7 @@ const mainListItems = (
             <Item name="About" href="/about"/>
         </SidebarList>
         <SidebarList name="Team">
-            <Item name="Player" href="/player"/>
+            <Item name="Player" href="/players"/>
         </SidebarList>
     </Fragment>
 )

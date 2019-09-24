@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles"
 import Layout from "components/layout"
-import { Avatar, Button, Card, CardContent, Typography, Grid, Paper, Divider } from "@material-ui/core"
+import { Avatar, Button, Card, CardContent, Typography, Grid, Divider } from "@material-ui/core"
 
 import QuickFactsTable from "components/player/quick-facts"
 
@@ -115,7 +115,7 @@ function Player() {
                         valueFormatter={(value, key) => key === "weight" ? `${value} lbs` : `${value} cals`}
                         nameFormatter={(value, key) => key === "weight" ? "Weight" : "Calories"}
                         data={data}
-                        areaDefs={[{dataKey: "weight", color: "green"}, {dataKey: "calories", stackId: "woo", color: "purple"}]}
+                        areaDefs={[{dataKey: "weight", color: "green"}, {dataKey: "weight", stackId: "woo", color: "green"}, {dataKey: "calories", stackId: "woo", color: "purple"}]}
                     />
                 </Grid>
             </Grid>
